@@ -1,0 +1,128 @@
+.sendMessageFormWrapper {
+    background: #1b1b1f;
+    padding: 2.4rem;
+    align-self: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    position: relative;
+}
+
+.signOutButton {
+    background: transparent;
+    border: 0;
+    color: #c4c4cc;
+
+    position: absolute;
+    left: 2.4rem;
+    top: 2.4rem;
+
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(0.9)
+    }
+}
+
+.userInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .userImage {
+        padding: 3px;
+        background: linear-gradient(100deg, #ff008e 0%, #ffcd1e 100%);
+        border-radius: 50%;
+        line-height: 0;
+
+        img {
+            width: 9.4rem;
+            height: 9.4rem;
+            border-radius: 50%;
+            border: 6px solid #121214;
+        }
+    }
+
+    .userName {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin-top: 1.6rem;
+    }
+
+    .userGithub {
+        display: flex;
+        align-items: center;
+
+        margin-top: 8px;
+        color: #c4c4cc;
+
+        svg {
+            margin-right: 8px;
+        }
+    }
+}
+
+.sendMessageForm {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin-top: 4.8rem;
+
+    background: #202024;
+
+    label {
+        padding: 1.8rem 2.4rem;
+        font-size: 2rem;
+        background: #29292e;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    textarea {
+        background: transparent;
+        border: 0;
+        padding: 2.4rem;
+        resize: none;
+        height: 16rem;
+        color: #e1e1e6;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &::placeholder {
+            color: #8d8d99;
+        }
+    }
+
+    button {
+        align-self: flex-end;
+        background: #ff008e;
+        margin: 2.4rem;
+        cursor: pointer;
+        padding: 0 3.2rem;
+        height: 4rem;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 0;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+
+        
+    }
+}
