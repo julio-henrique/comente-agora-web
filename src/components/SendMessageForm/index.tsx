@@ -12,13 +12,13 @@ export function SendMessageForm() {
     async function handleSendMessage(event: FormEvent) {
         event.preventDefault()
 
-        if(!message.trim()) {
+        if (!message.trim()) {
             return
         }
 
-        await api.post('messages', { message })
-
         setMessage('')
+        
+        await api.post('messages', { message })
     }
 
     return (

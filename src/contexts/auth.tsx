@@ -64,7 +64,7 @@ export function AuthProvider(props: AuthProvider) {
                 setUser(res.data)
             })
         }
-    })
+    }, [])
 
     useEffect(() => {
         const url = window.location.href
