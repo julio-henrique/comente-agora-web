@@ -5,9 +5,22 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    > img {
+    > p {
         height: 2.8rem;
         margin: 3.2rem 0;
+        font-size: 3.2rem;
+        color: #80ff72;
+        word-spacing: 0.5rem;
+        letter-spacing: 0.1rem;
+
+        span {
+            color: #5d7377;
+        letter-spacing: 0.5rem;
+        }
+
+        .icon {
+            margin-right: 1.5rem;
+        }
     }
 }
 
@@ -39,7 +52,8 @@
 
             .userImage {
                 padding: 2px;
-                background: linear-gradient(100deg, #ff008e 0%, #ffcd1e 100%);
+                background-color: #7ee8fa;
+                background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
                 border-radius: 50%;
                 line-height: 0;
 

@@ -1,7 +1,11 @@
+/* :root {
+    --first-color: var(#7ee8fa);
+}
+ */
 .loginBoxWrapper {
     height: 100vh;
     width: 100%;
-    background: #17171a url(../../assets/banner-girl.png) no-repeat center top;
+    background: #17171a;
 
     padding: 47rem 8rem 0;
     text-align: center;
@@ -11,13 +15,20 @@
     justify-content: center;
     align-items: center;
 
+    background: #17171a url(../../assets/people.png) no-repeat center top;
+    
+    .icon {
+        font-size: 2rem;
+        padding-left: 300rem;
+    }
     strong {
         font-size: 2.9rem;
         line-height: 2.8rem;
     }
 
+
     .signInWithGithub {
-        background: #ffcd1e;
+        background: #80ff72;
         margin-top: 1.5rem;
         padding: 0 4rem;
         height: 4.8rem;
