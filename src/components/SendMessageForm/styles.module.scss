@@ -34,7 +34,8 @@
 
     .userImage {
         padding: 3px;
-        background: linear-gradient(100deg, #ff008e 0%, #ffcd1e 100%);
+        background-color: #7ee8fa;
+        background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
         border-radius: 50%;
         line-height: 0;
 
@@ -102,7 +103,7 @@
 
     button {
         align-self: flex-end;
-        background: #ff008e;
+        background: hsl(114, 100%, 22%);
         margin: 2.4rem;
         cursor: pointer;
         padding: 0 3.2rem;

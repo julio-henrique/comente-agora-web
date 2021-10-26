@@ -1,7 +1,7 @@
-import logoImg from '../../assets/logo.svg'
 import io from 'socket.io-client'
 import { useEffect, useState } from 'react'
 import { api } from '../../services/api'
+import { FaRegComments } from 'react-icons/fa'
 
 import styles from './styles.module.scss'
 
@@ -46,8 +46,7 @@ export function MessageList() {
 
     return (
         <div className={styles.messageListWrapper}>
-            <img src={logoImg} alt="Logo" />
-
+            <p>Comente <span>Agora</span> <FaRegComments className={styles.icon} /> Web</p>
             <ul className={styles.messageList}>
                 {messages.map(message => {
                     return (
