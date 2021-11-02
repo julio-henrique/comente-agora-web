@@ -2,6 +2,7 @@ import { FormEvent, useContext, useState } from 'react'
 import { VscGithubInverted, VscSignOut } from 'react-icons/vsc'
 import { AuthContext } from '../../contexts/auth'
 import { api } from '../../services/api'
+import toast, { Toaster } from 'react-hot-toast'
 
 import styles from './styles.module.scss'
 
@@ -9,20 +10,36 @@ export function SendMessageForm() {
     const { user, signOut } = useContext(AuthContext)
     const [ message, setMessage ] = useState('')
 
+    const toasting = () => {
+        toast.success('Mensagem enviada com sucesso!', {
+            style: {
+              padding: '16px',
+              fontSize: '16px',
+            }
+        })
+    }
+
     async function handleSendMessage(event: FormEvent) {
         event.preventDefault()
 
         if (!message.trim()) {
+            toast.error('Erro. Você fez uma mensagem vazia', {
+                style: {
+                  padding: '16px',
+                  fontSize: '16px',
+                }
+            })
             return
         }
 
         setMessage('')
-        
+        toasting()
         await api.post('messages', { message })
     }
 
     return (
         <div className={styles.sendMessageFormWrapper}>
+            <Toaster />
             <button onClick={signOut} className={styles.signOutButton}>
                 <VscSignOut size="32" />
             </button>
@@ -37,7 +54,6 @@ export function SendMessageForm() {
                     {user?.login}
                 </span>
             </header>
-
             <form onSubmit={handleSendMessage} className={styles.sendMessageForm}>
                 <label htmlFor="message">Mensagem</label>
                 <textarea 
