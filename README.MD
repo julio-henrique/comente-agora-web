@@ -101,7 +101,7 @@ Eu já estou decidido e vou focar em aprender mais sobre o Vite.js, essa ferrame
 
 ## Author
 
-- Linkedin - [Julio Henrique](https://www.linkedin.com/in/julio-h/)
+- Linkedin - [Julio Henrique](https://www.linkedin.com/in/julio-henriqueCS/)
 - Email - juliohjesus@gmail.com
 
 ## Reconhecimentos
